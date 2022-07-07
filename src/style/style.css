@@ -1,0 +1,19 @@
+.flex-part {
+ 	width:  600px;
+ }
+
+#menu {
+	right: -100%;
+}
+
+#contact-form {
+	bottom: -100%;
+}
+
+.bottom-banner {
+	box-shadow: 1px -6px 11px 1px rgba(0,0,0,0.1);
+}
+
+.hidden {
+	display: none;
+}

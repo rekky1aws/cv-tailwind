@@ -1,0 +1,61 @@
+body {
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+header > * {
+	text-align: center;
+}
+
+main {
+	margin: 15px;
+}
+
+footer {
+	padding: 10px 15px;
+	background-color: #DDD;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	border-top-left-radius: 15px;
+}
+
+.back-link {
+	display: inline-block;
+	background-color: #89EFAC;
+	padding: 10px 15px;
+	border-radius: 25px;
+	text-decoration: none;
+	color: black;
+	margin: 5px;
+	transition: ease-in-out 0.1s;
+}
+
+.back-link:hover {
+	transform: scale(1.02);
+}
+
+.back-link:active {
+	transform: scale(0.9);
+}
+
+.back-link-phone {
+	font-weight: bold;
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+	.back-link-phone {
+		display: inline-block;
+	}
+
+	.back-link-large {
+		display: none;
+	}
+}

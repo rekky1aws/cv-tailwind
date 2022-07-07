@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/dist/output.css">
+	<link rel="stylesheet" type="text/css" href="/src/style/style.css">
+	<link rel="stylesheet" type="text/css" href="/src/style/print.css">
+	<link href="/src/style/print.css" rel="stylesheet" media="print" type="text/css"/>
+	<script type="text/javascript" src="/src/script/menu.js"></script>
+	<script type="text/javascript" src="/src/script/formulaire.js"></script>
+	<!-- Link Fonts -->
+	 <!-- Font : Prompt -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
+
+	<title>CV - HOCHART Donatien</title>
+</head>
+<body>	
+	<header class="z-10 flex justify-between items-center p-5 text-2xl drop-shadow-md sticky top-0 w-full h-20 bg-zinc-200">
+		<div class="font-prompt tracking-wide">HOCHART Donatien</div>
+		<!-- <div class="flex-container-se font-bold">
+			<a href="#"><div class="mx-4 uppercase">Compétences</div></a>
+			<a href="#oeuvres"><div class="mx-4 uppercase">Scolarité</div></a>
+			<a href="#image-gallery"><div class="mx-4 uppercase">Expérience</div></a>
+		</div> -->
+		<button onclick="afficherMenu();cacherFormulaire();">
+			<div class="burger-icon h-8 w-8 flex flex-col justify-around hover:scale-90">
+				<div class="w-full border-2 border-black rounded bg-black"></div>
+				<div class="w-full border-2 border-black rounded bg-black"></div>
+				<div class="w-full border-2 border-black rounded bg-black"></div>
+			</div>
+		</button>
+	</header>
+
+	<div class="resize image-container presentation h-32 hover:h-96 ease-out duration-500">
+		<img src="images/banner.png" class="w-full h-full object-cover">
+	</div>
+
+	<main class="flex flex-wrap justify-around categories-container">
+		<div class="flex-part m-3.5 categories" id="presentation">
+			<h2 class="text-xl text-center m-8 font-bold">Présentation</h2>
+			<img src="images/pp.jpg" alt="Une photo de moi" class="rounded-full h-32 aspect-square inline-block float-left m-4">
+			<p class="indent-8 first-letter:font-bold first-letter:text-2xl text-justify">
+				Je m'appelle Donatien et j'ai 20 ans. J'ai découvert l'infromatique lorsque j'étais enfant car j'ai grandi avec internet et des jeux vidéos. C'est donc tout naturellement que j'ai voulu aller plus loin et que j'ai commencé peu à peu l'apprentissage du développement informatique. J'ai commencé par coder des petits programmes sur ma calculatrice au lycée que je montrais à mon professeur de mathématiques. En les voyant, il m'a conseillé d'apprendre le Python.
+				Après le lycée, je voulais naturellement m'orienter vers l'informatique, et j'ai été accepté dans une école d'ingénieur : IG2I. Malheureusement, il y avait aussi de l'electricité au programme, et j'aimais moins cela donc j'ai arreté. Néanmoins, j'y ai acquis de bonne base en C, HTML, CSS, JavaScript, PHP et SQL, que j'ai consolidé par la suite en autodidacte, puis via ma formation avec PopSchool. Dans cette formation, j'ai aussi pu étendre le champ de mes connaissances, puisque nous avons appris à utiliser différents outils et technologies comme Bootstrap, SASS, TailWind, VueJS, Symfony.
+			</p>
+		</div>
+		
+		<div id="competences" class="flex-part m-3.5 mb-8 categories">	
+			<h2 class="text-xl text-center m-8 font-bold">Compétences</h2>
+			<div class="grid grid-cols-3 gap-4 my-8 competence-grid">
+				<img class="w-full h-full object-contain eease-in-out duration-200 opacity-90 hover:opacity-100 hover:scale-110 hover:rotate-2 hover:drop-shadow-lg competence-image" src="images/html5.png" alt="HTML 5">
+				<img class="w-full h-full object-contain ease-in-out duration-200 opacity-90 hover:opacity-100 hover:scale-110 hover:rotate-2 hover:drop-shadow-lg competence-image" src="images/css3.png" alt="CSS 3">
+				<img class="w-full h-full object-contain ease-in-out duration-200 opacity-90 hover:opacity-100 hover:scale-110 hover:rotate-2 hover:drop-shadow-lg competence-image" src="images/javascript.png" alt="JavaScript">
+				<img class="w-full h-full object-contain ease-in-out duration-200 opacity-90 hover:opacity-100 hover:scale-110 hover:rotate-2 hover:drop-shadow-lg competence-image" src="images/tailwind.png" alt="Tailwind CSS">
+				<img class="w-full h-full object-contain ease-in-out duration-200 opacity-90 hover:opacity-100 hover:scale-110 hover:rotate-2 hover:drop-shadow-lg competence-image" src="images/php.png" alt="PHP">
+				<img class="w-full h-full object-contain ease-in-out duration-200 opacity-90 hover:opacity-100 hover:scale-110 hover:rotate-2 hover:drop-shadow-lg competence-image" src="images/sass.png" alt="SASS">
+				<img class="w-full h-full object-contain ease-in-out duration-200 opacity-90 hover:opacity-100 hover:scale-110 hover:rotate-2 hover:drop-shadow-lg competence-image" src="images/c.png" alt="C">
+				<img class="w-full h-full object-contain ease-in-out duration-200 opacity-90 hover:opacity-100 hover:scale-110 hover:rotate-2 hover:drop-shadow-lg competence-image" src="images/python.png" alt="Python">
+				<img class="w-full h-full object-contain ease-in-out duration-200 opacity-90 hover:opacity-100 hover:scale-110 hover:rotate-2 hover:drop-shadow-lg competence-image" src="images/cpp.png" alt="C++">
+			</div>
+		</div>
+
+		<div id="scolarite" class="flex-part m-3.5 mb-8 categories">
+			<h2 class="text-xl text-center m-8 font-bold">Scolarité</h2>
+			<div class="flex flex-col">
+				
+				<div class="scola-part grid grid-cols-2 items-center my-2">
+					<div class="pr-4 text-right">
+						<p>2022</p>
+					</div>
+					<div class="border-l-4 pl-4">
+						<h3 class="font-bold">Pop School</h3>
+						<p>Formation developpeur web et web mobile.</p>
+					</div>
+				</div>
+
+				<div class="scola-part grid grid-cols-2 items-center my-2">
+					<div class="pr-4 text-right">
+						<p>2020 - 2021</p>
+					</div>
+					<div class="border-l-4 pl-4">
+						<h3 class="font-bold">IUT de Béthune</h3>
+						<p>Première année de DUT Génie Electrique et Informatique Industrielle.</p>
+					</div>
+				</div>
+
+				<div class="scola-part grid grid-cols-2 items-center my-2">
+					<div class="pr-4 text-right">
+						<p>2018 - 2020</p>
+					</div>
+					<div class="border-l-4 pl-4">
+						<h3 class="font-bold">IG2I</h3>
+						<p>Première année d'école d'Ingénieur en Génie Informatique et Industriel.</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div id="experience" class="flex-part m-3.5 mb-32 categories">
+			<h2 class="text-xl text-center m-8 font-bold">Expérience Professionnelle</h2>
+			<div class="flex flex-col">
+				
+				<div class="scola-part grid grid-cols-2 items-center my-2">
+					<div class="pr-4 text-right">
+						<p>2021</p>
+					</div>
+					<div class="border-l-4 pl-4">
+						<h3 class="font-bold">Yzee Services</h3>
+						<p>Gestionnaire en assurances automobile.</p>
+					</div>
+				</div>
+
+				<div class="scola-part grid grid-cols-2 items-center my-2">
+					<div class="pr-4 text-right">
+						<p>Juillet 2019</p>
+					</div>
+					<div class="border-l-4 pl-4">
+						<h3 class="font-bold">ASJ-Formation</h3>
+						<p>Stage développement web frontend.</p>
+					</div>
+				</div>
+
+				<div class="scola-part grid grid-cols-2 items-center my-2">
+					<div class="pr-4 text-right">
+						<p>Avril 2019</p>
+					</div>
+					<div class="border-l-4 pl-4">
+						<h3 class="font-bold">Centre Hospitalier de Lens</h3>
+						<p>Projet d'Animation pour les enfants et adolescents hospitalisés au Centre Hospitalier.</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<div class="print-contact categories">
+			<h2 class="text-xl text-center m-8 font-bold">Contact</h2>
+			<div class="flex justify-evenly items-center flex-wrap mt-4 pb-16 contacts-display">
+				<div>
+					<span class="font-bold">Téléphone : </span><span class="mb-6">06 52 74 97 21</span>
+				</div>
+				<div>
+					<span class="font-bold">Adresse : </span><span class="mb-6">39 rue Marot,<br>62160 Bully-les-Mines</span>
+				</div>
+				<div>
+					<span class="font-bold">Mail : </span><span class="hover:scale-105"><a href="mailto:donatienhochart2@gmail.com">donatienhochart2@gmail.com</a></span>
+				</div>
+				<div>
+					<span class="font-bold">GitHub : </span><span class="mb-6 hover:scale-105"><a href="http://github.com/rekky1aws" target="blank">github.com/rekky1aws</a></span>
+				</div>
+			</div>
+			<div class="flex justify-center">
+				<button class="bg-green-600 text-white rounded-full p-5 m-5 hover:scale-105 active:scale-90 font-bold hidden" onclick="afficherFormulaire();cacherMenu();">Formulaire de contact direct</button>
+			</div>
+		</div>
+
+	</main>
+
+	<footer class="w-full bg-green-300 bottom-banner min-h-96 drop-shadow-md" id="contact">
+		<h2 class="text-2xl font-bold p-4 underline underline-offset-2">Contacts :</h2>
+		<div class="text-xl flex justify-evenly items-center flex-wrap mt-4 pb-16">
+			<div class="flex flex-col w-64">
+				<span class="font-bold">Téléphone : </span><span class="mb-6">06 52 74 97 21</span>
+				<span class="font-bold">Adresse : </span><span class="mb-6">39 rue Marot,<br>62160 Bully-les-Mines</span>
+			</div>
+			<div class="flex flex-col w-64">
+				<div class="mb-6"><span class="font-bold">Mail : </span><span class="hover:scale-105"><a href="mailto:donatienhochart2@gmail.com">donatienhochart2@gmail.com</a></span></div>
+				<span class="font-bold">GitHub : </span><span class="mb-6 hover:scale-105"><a href="http://github.com/rekky1aws" target="blank">github.com/rekky1aws</a></span>
+			</div>
+		</div>
+		<div class="flex justify-center">
+			<button class="bg-green-600 text-white rounded-full p-5 m-5 hover:scale-105 active:scale-90 font-bold hidden" onclick="afficherFormulaire();cacherMenu();">Formulaire de contact direct</button>
+		</div>
+	</footer>
+
+	<div id="menu" class="bg-stone-500/90 z-20 w-screen lg:w-1/3 h-screen ease-in-out duration-500 top-0 r-full fixed">
+		<div onclick="cacherMenu();" class="flex justify-between p-5 text-xl uppercase bg-stone-600 menu-banner h-20">
+			<button class="font-bold text-white active:scale-090">></button>
+			<div class="text-white self-center">Menu</div>
+			<div></div>
+		</div>
+		<div class="menu-content h-full">
+			<ul class="grid grid-cols-1 w-full h-auto text-2xl text-white text-center p-auto">
+				<a onclick="cacherMenu();" href="#presentation" class="m-8 hover:scale-110 hover:font-bold"><li>Présentation</li></a>
+				<a onclick="cacherMenu();" href="#competences" class="m-8 hover:scale-110 hover:font-bold"><li>Compétences</li></a>
+				<a onclick="cacherMenu();" href="#scolarite" class="m-8 hover:scale-110 hover:font-bold"><li>Scolarité</li></a>
+				<a onclick="cacherMenu();" href="#experience" class="m-8 hover:scale-110 hover:font-bold"><li>Expérience Professionnelle</li></a>
+				<a onclick="cacherMenu();" href="#contact" class="m-8 hover:scale-110 hover:font-bold"><li>Contact</li></a>
+				<hr>
+				<a href="/documents/CV-HOCHART_Donatien.pdf" class="m-8 hover:scale-110 hover:font-bold">Obtenir le CV en verison PDF</a>
+				<a href="/informations/" class="m-8 hover:scale-110 hover:font-bold">Plus d'informations</a>
+				<a onclick="cacherMenu();" href="#page-top" class="m-8 hover:scale-110 hover:font-bold">&uarr; Retourner en haut de la page &uarr;</a>
+			</ul>
+		</div>
+	</div>
+
+	<div id="contact-form" class="ease-in-out duration-300 fixed w-screen md:w-4/5 bottom-0 h-2/3 z-20 bg-stone-500/90 rounded-t-xl inset-x-0 mx-auto">
+		<div class="w-full h-8 bg-stone-600 rounded-t-xl flex flex-row-reverse align-center py-1 px-2 text-white font-bold" onclick="cacherFormulaire();">
+			<!-- <p class="rounded-full bg-red-500 aspect-square p-auto hover:scale-105 active:scale-90 text-center mx-1">X</p>
+			<p class="rounded-full bg-stone-500 aspect-square p-auto hover:scale-105 active:scale-90 text-center mx-1">O</p> -->
+			<button class="rounded-full bg-stone-500 aspect-square p-auto hover:scale-105 active:scale-90 text-center mx-1">-</button>
+		</div>
+		<form>
+			<div class="w-full flex flex-col p-5">
+				<label for="contactName" class="font-bold text-white">Nom :</label>
+				<input type="text" name="contactName" id="contactName" class="rounded-xl mb-5 py-1 px-2" required>
+
+				<label for="contactMail" class="font-bold text-white">Adresse Mail :</label>
+				<input type="mail" name="contactMail" id="contactMail" class="rounded-xl mb-5 py-1 px-2" placeholder="yourname@example.com" required>
+
+				<!-- <label for="contactSubject" class="font-bold text-white">Objet :</label>
+				<input type="text" name="contactSubject" id="contactSubject" class="rounded-xl mb-5 p-1"> -->
+
+				<label for="contactContent" class="font-bold text-white">Contenu du Mail :</label>
+				<textarea class="rounded-xl mb-5 py-1 px-2" name="contactContent" id="contactContent" required></textarea>
+			</div>
+			<div class="flex flex-row-reverse">
+				<input class="py-2 px-3 bg-green-600 text-white font-bold rounded-full m-5 hover:scale-105 active:scale-90" type="submit" value="Valider">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
