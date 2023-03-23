@@ -88,6 +88,14 @@
 		font-size: 12px;
 	}
 
+	#experience > div > div {
+		display: none;
+	}
+
+	#experience > div > div:nth-child(1), #experience > div > div:nth-child(2), #experience > div > div:nth-child(3) {
+		display: grid;
+	}
+
 	#menu {
 		display: none;
 	}
@@ -107,11 +115,23 @@
 		font-size: 12px;
 	}
 
+	#scolarite > div > div {
+		display: none;
+	}
+
+	#scolarite > div > div:nth-child(1), #scolarite > div > div:nth-child(2), #scolarite > div > div:nth-child(3) {
+		display: grid;
+	}
+
 	.name {
 		font-size: 2.5rem;
 	}
 
 	.presentation-text {
+		display: none;
+	}
+
+	.print-hide {
 		display: none;
 	}
 
