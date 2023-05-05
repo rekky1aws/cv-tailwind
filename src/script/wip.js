@@ -13,6 +13,11 @@ const infos = {
 		title: "Ce projet est toujours en cours de création.",
 		paragraph: "Mais merci d'avoir tenté, essayez de cliquer sur d'autres logos.",
 	},
+	"en": {
+		goBack: "Go back to the resume",
+		title: "This project is stilla work in progress.",
+		paragraph: "But thanks for trying it, try the other icons to find something interesting.",
+	},
 }
 
 
