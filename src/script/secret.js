@@ -26,7 +26,7 @@ function checkKey (evt)
 		document.body.classList.toggle('secret');
 	}
 
-	// Checking code validity
+	// Checking secret code validity
 	if (evt.keyCode == secretCode[counter]) {
 		counter ++;
 	} else {
