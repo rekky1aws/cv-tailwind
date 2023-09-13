@@ -50,6 +50,7 @@
 		gap: 5px;
 		width: 200px;
 		margin-left: calc(50% - 100px);
+		transform: scale(0.6);
 	}
 
 	.contacts-display {
