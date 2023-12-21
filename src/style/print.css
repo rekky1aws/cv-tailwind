@@ -3,6 +3,10 @@
 }
 
 @media print {
+	/* * {
+		outline: 1px solid red;
+	} */
+
 	footer {
 		display: none;
 	}
@@ -18,7 +22,7 @@
 		font-size: 12px;
 		/*border: 2px solid lime;*/
 		height: 50px;
-		background-color: red;
+		/* background-color: red; */
 		display: flex;
 		justify-content: center;
 		align-items: flex-end;
@@ -47,10 +51,13 @@
 	}
 
 	.competence-grid {
-		gap: 5px;
-		width: 200px;
+		gap: 45px 5px;
+		width: 100%;
 		margin-left: calc(50% - 100px);
-		transform: scale(0.6);
+		transform: scale(0.75, 0.7);
+		grid-template-columns: repeat(4, 1fr);
+		margin: -72px -16px;
+		height: 450px;
 	}
 
 	.contacts-display {
@@ -73,6 +80,9 @@
 	#competences {
 		grid-column: 5;
 		grid-row: 1;
+		height: 400px;
+		width: 200px;
+		padding: 0;
 	}
 
 	#contact-form {
@@ -104,6 +114,7 @@
 	#presentation {
 		grid-column: 1 / 5;
 		grid-row:  1;
+		height: 400px;
 	}
 
 	#presentation > p {
@@ -145,5 +156,13 @@
 	.print-presentation-text:first-letter {
 		font-weight: bold;
 		font-size: 1.5rem;
+	}
+
+	.titre-competences {
+		display: inline-block;
+		text-align: center;
+		font-weight: bold;
+		width: 100%;
+		font-size: 16px;
 	}
 }
