@@ -16,6 +16,5 @@
 
 ## Version PDF
  + Mettre à jour par rapport a la version web
- + Trier compétences pour garder `bash` et `Apache` en priorité
  + Modifier l'affichage des logos et labels des compétences
  + Ajouter une version plus orientée RH
